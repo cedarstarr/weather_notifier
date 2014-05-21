@@ -1,4 +1,5 @@
 WeatherNotifier::Application.routes.draw do
+  get "landings/index"
   resources :weathers do
   #->Prelang (voting/acts_as_votable)
   member do
