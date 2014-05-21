@@ -1,6 +1,5 @@
-<h1>Editing weather</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @weather %> |
-<%= link_to 'Back', weathers_path %>
+<%- model_class = Weather -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => Weather %></h1>
+</div>
+<%= render :partial => 'form' %>
